@@ -144,6 +144,7 @@
   <target name="phpunitfast" description="Run tests">
     <exec dir="${srcdir}/tests" executable="${sh}" passthru="true" checkreturn="true"> 
       <arg line="-c &apos;${phpunit_command} -dzend.enable_gc=0&apos;"  />
+    </exec>  
   </target>
 
   <!-- Set up dependencies -->
